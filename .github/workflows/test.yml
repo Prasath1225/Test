@@ -28,5 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run for rajini
         run: echo superstar*!
+        
+         # Runs a single command using the runners shell
+      - name: Run for rajini python
+        run: python prasath.py
 
       
