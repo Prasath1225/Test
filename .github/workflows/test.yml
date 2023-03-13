@@ -35,8 +35,6 @@ jobs:
         run: | 
          java -version
          ls
-         docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
-         -t http://testphp.vulnweb.com -g gen.conf -r testreport.html
        
 
        
