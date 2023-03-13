@@ -33,4 +33,4 @@ jobs:
       - name: Installing zap
         run: | 
          java -version
-         sudo ./ZAP_2_11_1_unix.sh
+         docker pull owasp/zap2docker-stable
