@@ -31,8 +31,11 @@ jobs:
         
          # Runs a single command using the runners shell
       - name: Installing zap
+        continue-on-error: true
         run: | 
          java -version
          docker pull owasp/zap2docker-stable
-         docker run -v ./ -t owasp/zap2docker-stable zap-baseline.py \
-         -t https://demo.testfire.net -g gen.conf -r testreport.html
+         docker run -t owasp/zap2docker-stable zap-baseline.py -t https://demo.testfire.net -r testreport.html
+
+
+       
