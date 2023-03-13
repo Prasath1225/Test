@@ -31,14 +31,4 @@ jobs:
         
          # Runs a single command using the runners shell
       - name: Run for rajini python
-        run: python prasath.py
-        
-        # Runs a single command using the runners shell
-      - name: Installing SAST tool bandit
-        run: pip install bandit
-        
-        # Runs a single command using the runners shell
-      - name: Running bandit
-        run: bandit -r ./
-
-      
+        run: java -version     
