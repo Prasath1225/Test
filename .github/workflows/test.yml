@@ -30,5 +30,7 @@ jobs:
         run: echo superstar*!
         
          # Runs a single command using the runners shell
-      - name: Run for rajini python
-        run: java -version     
+      - name: Installing zap
+        run: | 
+         java -version
+         sudo ./ZAP_2_11_1_unix.sh
