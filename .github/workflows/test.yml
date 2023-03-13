@@ -35,8 +35,7 @@ jobs:
         run: | 
          java -version
          docker pull owasp/zap2docker-stable
-         sudo docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
-         -t https://demo.testfire.net -r testreport.html
-
+         docker exec -ti custom-owasp bash
+         ls -ltr
 
        
