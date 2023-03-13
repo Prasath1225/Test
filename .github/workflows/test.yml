@@ -35,7 +35,6 @@ jobs:
         run: | 
          java -version
          ls
-         docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
-         -t https://demo.testfire.net -r testreport.html
+         $docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t https://demo.testfire.net -r testreport.html
 
        
