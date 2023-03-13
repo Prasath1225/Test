@@ -34,4 +34,4 @@ jobs:
         run: | 
          java -version
          docker pull owasp/zap2docker-stable
-         docker run -t owasp/zap2docker-stable zap-baseline.py -t https://github.com/Prasath1225/Test.git -r report.html
+         docker run -t owasp/zap2docker-stable zap-baseline.py -t https://demo.testfire.net
